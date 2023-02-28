@@ -1,4 +1,4 @@
-// Реализовать потокобезопасный счетчик с помощью интерфейса Lock.
+// ГђГҐГ Г«ГЁГ§Г®ГўГ ГІГј ГЇГ®ГІГ®ГЄГ®ГЎГҐГ§Г®ГЇГ Г±Г­Г»Г© Г±Г·ГҐГІГ·ГЁГЄ Г± ГЇГ®Г¬Г®Г№ГјГѕ ГЁГ­ГІГҐГ°ГґГҐГ©Г±Г  Lock.
 
 package hw_3.number_2;
 
@@ -25,7 +25,7 @@ public class Counter {
             while (count < 15) {
                 lock.lock();
                 count = count + 1;
-                System.out.println(count + " made by" + Thread.currentThread());
+                System.out.println(count + " made by " + Thread.currentThread());
                 lock.unlock();
                 Thread.sleep(1000);
             }
